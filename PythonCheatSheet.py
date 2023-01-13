@@ -1,9 +1,9 @@
 """
 #lists
-dumbasses = ["Joey", "Mike", "Lawrence", "Karen", "Miles"]
+name_list = ["Chris", "Mike", "Lawrence", "Karen", "Miles"]
 
-print("List of dumbasses I know: ")
-print(dumbasses[0] + "\n" + dumbasses[1] + "\n" + dumbasses[2] + "\n")
+print("List of people I know: ")
+print(name_list[0] + "\n" + name_list[1] + "\n" + name_list[2] + "\n")
 """
 
 """
@@ -39,9 +39,20 @@ print(words)
 """
 #Tuples: data doesn't change and can't change
 height = (5,7)
-print(height[1])
+height[1] = 8   #will result in error
+print(height) 
 heights = [(5,7), (6,2), (5,3), (6, 0), (5,11)] #list of tuples
 print(heights[1])
+"""
+
+"""
+#Comparing tuples
+truth = (0,1,2) < (5,1,2)
+truth2 = ('Jones', 'Sally', 'Quentin') > ('Jones','Sam')
+truth3 = (1,5,4) > (1,5,4)
+print(truth)
+print(truth2)
+print(truth3)
 """
 
 """
