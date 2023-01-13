@@ -318,6 +318,7 @@ print(counts.keys())        #prints keys
 print(counts.items())       #prints items
 """
 
+"""
 #Reading a file into a dictionary
 filename = input('Enter file name: ')
 fhandle = open(filename)
@@ -336,3 +337,6 @@ for word,count in counts.items():
         bigcount = count
 
 print(bigword, bigcount)
+
+"""
+
