@@ -351,3 +351,16 @@ print(bigword, bigcount)
 
 """
 
+"""
+import re
+#Regex or Regular Expressions
+handle = open('mailbox.txt')
+for line in handle:
+    line = line.rstrip()
+    if re.search('the', line):   #searches for string
+        print(line)
+    elif re.search('rigamarole', line):   #searches for string
+        print(line)
+
+"""
+
