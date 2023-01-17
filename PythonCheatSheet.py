@@ -364,3 +364,21 @@ for line in handle:
 
 """
 
+"""
+#read and write csv using DictWriter
+import csv
+
+with open('Domestic_Coffee_Consumption.csv', 'r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+
+    with open('DMC.csv', 'w') as new_file:
+        fieldnames = ['Country', 'Coffee type', '1990/91', '1991/92', '1992/93', '1993/94', '1994/95', '1995/96', '1996/97', '1997/98', '1998/99', '1999/00', '2000/01', '2001/02', '2002/03', '2003/04', '2004/05', '2005/06', '2006/07', '2007/08', '2008/09', '2009/10', '2010/11', '2011/12', '2012/13', '2013/14', '2014/15', '2015/16', '2016/17', '2017/18', '2018/19', '2019/20', 'Total_domestic_consumption']
+        csv_writer = csv.DictWriter(new_file, fieldnames = fieldnames, delimiter='\t')
+
+        csv_writer.writeheader()
+
+        for line in csv_reader:
+#            del line['Coffee type']    #delete fieldname from result (header remains, remove from fieldnames list)
+            csv_writer.writerow(line)
+            #print(line['Country'])
+"""
